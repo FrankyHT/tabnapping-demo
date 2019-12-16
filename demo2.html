@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Demo 2 - Tab Napping</title>
+
+<style type="text/css">
+body {
+  font-size: 30px;
+}
+p.message {
+
+}
+#main {
+  color: red;
+}
+
+*::-ms-backdrop, #main { color: blue; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	#main { color:yellow; }
+  p.message {font-size: 20px;}
+}
+
+@media all and (-ms-high-contrast:none){
+     *::-ms-backdrop, #main { color: #A64DFF; font-weight: bold; vertical-align:  center;}
+}
+
+@-moz-document url-prefix(){
+    #main {
+        color: #000;
+    }
+  }
+
+div img {
+  width: 100%;
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+
+
+<center>
+<h1>Page with link using target="_blank" attribute</h1>
+<h2>www.goodsite.com (but bad coding practice)</h2>
+</center>
+
+<ul>
+<li><a href="demo2-tab.html" target="_blank">demo2-tab.html</a></li>
+<li><a href="demo2-tab.html" target="_blank" rel="noopener">demo2-tab.html</a> (with rel="noopener noreferrer")</li>
+</ul>
+
+
+</body>
+
+
+
+</html>

